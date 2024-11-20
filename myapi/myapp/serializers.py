@@ -27,3 +27,6 @@ class PontoSerializer(serializers.ModelSerializer):
             'reconhecido',
             'distancia',
         ]
+
+class PhotoUploadSerializer(serializers.Serializer):
+    photo = serializers.ImageField()
